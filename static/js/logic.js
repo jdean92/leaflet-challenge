@@ -91,4 +91,5 @@ function createMap(earthquakes) {
   // Add the layer control to the map
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
-  }).addTo(myMap
+  }).addTo(myMap);
+}
