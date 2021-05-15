@@ -19,6 +19,28 @@ function createFeatures(earthquakeData) {
       });
     
       var circleGroup = [];
+      
       for (var i = 0; i < earthquakeData.length; i++) {
         coordinates = [earthquakeData[i].geometry.coordinates[1],earthquakeData[i].geometry.coordinates[0]]
         properties = earthquakeData[i].properties;
+        var Choosecolor = "red";
+    if (properties.mag < 1) {
+      Choosecolor = "purple";
+    }
+    else if (properties.mag < 2) {
+      Choosecolor = "purple";
+    }
+    else if (properties.mag < 3) {
+      Choosecolor = "yellow";
+    }
+    else if (properties.mag < 4) {
+      Choosecolor = "gold";
+    }
+    else if (properties.mag < 5) {
+      Choosecolor = "orange";
+    }
+    
+
+
+
+        
