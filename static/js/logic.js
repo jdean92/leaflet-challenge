@@ -18,3 +18,7 @@ function createFeatures(earthquakeData) {
         accessToken: API_KEY
       });
     
+      var circleGroup = [];
+      for (var i = 0; i < earthquakeData.length; i++) {
+        coordinates = [earthquakeData[i].geometry.coordinates[1],earthquakeData[i].geometry.coordinates[0]]
+        properties = earthquakeData[i].properties;
