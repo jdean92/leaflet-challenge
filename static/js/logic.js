@@ -1,5 +1,5 @@
 Quake = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
-//Api_key = "pk.eyJ1IjoiYnJvb2thbm4iLCJhIjoiY2tvcDI5ZzQ4MDF6eTJxbGM0YzJ6d3N3YiJ9.UPSAHkGUAQB4nJo0NnXv9g"
+Api_key = "pk.eyJ1IjoiYnJvb2thbm4iLCJhIjoiY2tvcDI5ZzQ4MDF6eTJxbGM0YzJ6d3N3YiJ9.UPSAHkGUAQB4nJo0NnXv9g"
 // Perform a GET request to the query URL
 d3.json(Quake).then(function(data) {
   // Once we get a response, send the data.features object to the createFeatures function
