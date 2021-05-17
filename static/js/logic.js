@@ -35,7 +35,7 @@ function createFeatures(earthquakeData) {
                 radius:size (feature.properties.mag)
                 ,fillColor:color (feature.geometry.coordinates[2])
                 ,fillOpacity:.1
-                ,color: "blue"
+                ,color: "yellow"
                 ,stroke: true
                 ,weight: 1
             })
